@@ -1,3 +1,38 @@
+# Pest and Disease Detection in Crops 🌱🔍
+
+This project develops a **Convolutional Neural Network (CNN)** pipeline for detecting plant diseases (potato and tomato) from leaf images. The model is designed to support **farmers and agronomists** by identifying early signs of disease using smartphone or drone images.
+
+## 📂 Project Structure
+- `pest_disease_detection_cnn.ipynb` — main notebook with end-to-end workflow.
+- `data/` — dataset (train/valid/test splits).
+- `best_model.pth` — saved best trained model.
+- `label_map.json` — mapping of class indices to disease labels.
+
+## 🚀 Features
+- Image preprocessing & dataset inspection
+- Data augmentation (rotation, blur, center crop, etc.)
+- CNN training using **MobileNetV3-Small** (transfer learning)
+- Metrics tracking: accuracy, loss, F1-score
+- Confusion matrix & per-class evaluation
+- Final **inference pipeline**: upload an image and get predicted class + confidence
+
+  
+## 🖼 Example Inference
+  <img width="353" height="340" alt="Image" src="https://github.com/user-attachments/assets/f742b150-a811-41c9-9980-c282ea6a19b7" />
+
+```text
+Top-3 Predictions:
+1. tomato_healthy  47.1%
+2. tomato_late     24.7%
+3. potato_early    14.6%
+
+
+
+
+
+
+
+
 README
 # Task Manager
 
